@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuizApp.QuizApp_DB
+namespace QuizApp.QuizAppDb
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuizAppEntities : DbContext
+    public partial class QuizAppDbEntities : DbContext
     {
-        public QuizAppEntities()
-            : base("name=QuizAppEntities")
+        public QuizAppDbEntities()
+            : base("name=QuizAppDbEntities")
         {
         }
     

@@ -39,7 +39,7 @@
           <Property Name="CorrectAnswer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Marks" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="QuizAppEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QuizAppDbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Questions" EntityType="Self.Question" />
         </EntityContainer>
       </Schema>
@@ -47,7 +47,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QuizAppModelStoreContainer" CdmEntityContainer="QuizAppEntities">
+        <EntityContainerMapping StorageEntityContainer="QuizAppModelStoreContainer" CdmEntityContainer="QuizAppDbEntities">
           <EntitySetMapping Name="Questions">
             <EntityTypeMapping TypeName="QuizAppModel.Question">
               <MappingFragment StoreEntitySet="Question">

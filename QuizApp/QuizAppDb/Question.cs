@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuizApp.QuizApp_DB
+namespace QuizApp.QuizAppDb
 {
     using System;
     using System.Collections.Generic;
