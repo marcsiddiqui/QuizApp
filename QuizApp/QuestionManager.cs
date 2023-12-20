@@ -115,5 +115,12 @@ namespace QuizApp
         {
             ClearAll();
         }
+
+        private void StartExam_Click(object sender, EventArgs e)
+        {
+            Exam exam = new Exam();
+            exam.Show();
+            
+        }
     }
 }

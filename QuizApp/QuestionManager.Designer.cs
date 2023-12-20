@@ -37,9 +37,10 @@
             this.C = new System.Windows.Forms.CheckBox();
             this.OptionD = new System.Windows.Forms.TextBox();
             this.D = new System.Windows.Forms.CheckBox();
-            this.SaveQuestion = new System.Windows.Forms.Button();
             this.Marks = new System.Windows.Forms.TextBox();
             this.ClearAll_Fields = new System.Windows.Forms.Button();
+            this.SaveQuestion = new System.Windows.Forms.Button();
+            this.StartExam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Question
@@ -127,20 +128,6 @@
             this.D.UseVisualStyleBackColor = true;
             this.D.CheckedChanged += new System.EventHandler(this.D_CheckedChanged);
             // 
-            // SaveQuestion
-            // 
-            this.SaveQuestion.FlatAppearance.BorderSize = 2;
-            this.SaveQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveQuestion.Image = global::QuizApp.Properties.Resources.icons8_save_button_35;
-            this.SaveQuestion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveQuestion.Location = new System.Drawing.Point(12, 193);
-            this.SaveQuestion.Name = "SaveQuestion";
-            this.SaveQuestion.Size = new System.Drawing.Size(429, 41);
-            this.SaveQuestion.TabIndex = 9;
-            this.SaveQuestion.Text = "Save Question";
-            this.SaveQuestion.UseVisualStyleBackColor = true;
-            this.SaveQuestion.Click += new System.EventHandler(this.SaveQuestion_Click);
-            // 
             // Marks
             // 
             this.Marks.Location = new System.Drawing.Point(787, 13);
@@ -161,11 +148,36 @@
             this.ClearAll_Fields.UseVisualStyleBackColor = true;
             this.ClearAll_Fields.Click += new System.EventHandler(this.ClearAll_Fields_Click);
             // 
+            // SaveQuestion
+            // 
+            this.SaveQuestion.FlatAppearance.BorderSize = 2;
+            this.SaveQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveQuestion.Image = global::QuizApp.Properties.Resources.icons8_save_button_35;
+            this.SaveQuestion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveQuestion.Location = new System.Drawing.Point(12, 193);
+            this.SaveQuestion.Name = "SaveQuestion";
+            this.SaveQuestion.Size = new System.Drawing.Size(429, 41);
+            this.SaveQuestion.TabIndex = 9;
+            this.SaveQuestion.Text = "Save Question";
+            this.SaveQuestion.UseVisualStyleBackColor = true;
+            this.SaveQuestion.Click += new System.EventHandler(this.SaveQuestion_Click);
+            // 
+            // StartExam
+            // 
+            this.StartExam.Location = new System.Drawing.Point(624, 375);
+            this.StartExam.Name = "StartExam";
+            this.StartExam.Size = new System.Drawing.Size(158, 35);
+            this.StartExam.TabIndex = 12;
+            this.StartExam.Text = "Start Exam";
+            this.StartExam.UseVisualStyleBackColor = true;
+            this.StartExam.Click += new System.EventHandler(this.StartExam_Click);
+            // 
             // QuestionManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 444);
+            this.Controls.Add(this.StartExam);
             this.Controls.Add(this.ClearAll_Fields);
             this.Controls.Add(this.Marks);
             this.Controls.Add(this.SaveQuestion);
@@ -202,5 +214,6 @@
         private System.Windows.Forms.Button SaveQuestion;
         private System.Windows.Forms.TextBox Marks;
         private System.Windows.Forms.Button ClearAll_Fields;
+        private System.Windows.Forms.Button StartExam;
     }
 }
