@@ -10,18 +10,10 @@
 namespace QuizApp.QuizAppDb
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Question
+    public partial class sp_helpdiagramdefinition_Result
     {
-        public int Id { get; set; }
-        public string Question1 { get; set; }
-        public string A { get; set; }
-        public string B { get; set; }
-        public string C { get; set; }
-        public string D { get; set; }
-        public string CorrectAnswer { get; set; }
-        public decimal Marks { get; set; }
-        public bool HasMultipleAnswers { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

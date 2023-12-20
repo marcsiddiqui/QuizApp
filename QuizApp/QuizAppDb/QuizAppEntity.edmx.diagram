@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="a197ad75900a41e3a96170ccf3bfb6a7" Name="Diagram1">
         <EntityTypeShape EntityType="QuizAppModel.Question" Width="1.5" PointX="0.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuizAppModel.sysdiagram" Width="1.5" PointX="11" PointY="0.5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

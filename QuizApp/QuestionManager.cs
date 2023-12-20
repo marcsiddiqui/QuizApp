@@ -24,6 +24,8 @@ namespace QuizApp
         {
             var hasErrors = false;
 
+            var correctAnswers = new List<string>();
+
             Question question = new Question();
             question.Question1 = Question.Text;
             question.A = OptionA.Text;
@@ -32,14 +34,18 @@ namespace QuizApp
             question.D = OptionD.Text;
 
             if (A.Checked)
-                question.CorrectAnswer = OptionA.Text;
-            else if (B.Checked)
-                question.CorrectAnswer = OptionB.Text;
-            else if (C.Checked)
-                question.CorrectAnswer = OptionC.Text;
-            else if (D.Checked)
-                question.CorrectAnswer = OptionD.Text;
-            else
+                correctAnswers.Add(OptionA.Text);
+            
+            if (B.Checked)
+                correctAnswers.Add(OptionB.Text);
+            
+            if (C.Checked)
+                correctAnswers.Add(OptionC.Text);
+            
+            if (D.Checked)
+                correctAnswers.Add(OptionD.Text);
+
+            if (!A.Checked && !B.Checked && !C.Checked && !D.Checked)
             {
                 hasErrors = true;
                 MessageBox.Show("Please select correct answer", "Error");
@@ -49,6 +55,11 @@ namespace QuizApp
 
             if (!hasErrors)
             {
+
+                question.CorrectAnswer = string.Join("~", correctAnswers);
+
+                question.HasMultipleAnswers = correctAnswers.Count > 1;
+
                 entities.Questions.Add(question);
                 entities.SaveChanges();
 
