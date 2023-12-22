@@ -44,6 +44,7 @@
             this.RadioD = new System.Windows.Forms.RadioButton();
             this.NextQuestion = new System.Windows.Forms.Button();
             this.Marks = new System.Windows.Forms.Label();
+            this.SubmitExam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Qno
@@ -194,7 +195,7 @@
             // 
             // NextQuestion
             // 
-            this.NextQuestion.Location = new System.Drawing.Point(575, 364);
+            this.NextQuestion.Location = new System.Drawing.Point(588, 354);
             this.NextQuestion.Name = "NextQuestion";
             this.NextQuestion.Size = new System.Drawing.Size(197, 34);
             this.NextQuestion.TabIndex = 3;
@@ -211,6 +212,16 @@
             this.Marks.TabIndex = 0;
             this.Marks.Text = "Marks";
             this.Marks.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // SubmitExam
+            // 
+            this.SubmitExam.Location = new System.Drawing.Point(588, 354);
+            this.SubmitExam.Name = "SubmitExam";
+            this.SubmitExam.Size = new System.Drawing.Size(197, 34);
+            this.SubmitExam.TabIndex = 3;
+            this.SubmitExam.Text = "Submit";
+            this.SubmitExam.UseVisualStyleBackColor = true;
+            this.SubmitExam.Click += new System.EventHandler(this.SubmitExam_Click);
             // 
             // Exam
             // 
@@ -233,6 +244,7 @@
             this.Controls.Add(this.RadioB);
             this.Controls.Add(this.RadioC);
             this.Controls.Add(this.RadioD);
+            this.Controls.Add(this.SubmitExam);
             this.Font = new System.Drawing.Font("Tahoma", 12F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Exam";
@@ -262,5 +274,6 @@
         private System.Windows.Forms.Button NextQuestion;
         private System.Windows.Forms.Label Marks;
         private System.Windows.Forms.Label OptionA;
+        private System.Windows.Forms.Button SubmitExam;
     }
 }
